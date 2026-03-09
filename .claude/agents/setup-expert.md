@@ -55,7 +55,7 @@ use PDO;
 
 class Database
 {
-    static public $path = __DIR__ . '/../../database/database.db';
+    static public $path = __DIR__ . '/database/database.db';
 
     static public function get(): PDO
     {

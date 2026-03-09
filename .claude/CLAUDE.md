@@ -1,4 +1,4 @@
-# PHP REST API — Skills Index
+# PHP REST API — Skills & Agents Index
 
 This project is a framework-free PHP 8.3.8+ REST API with SQLite, PSR-4 autoloading, and a 4-layer architecture:
 
@@ -8,7 +8,23 @@ index.php → Controller → Service → Repository → Database (PDO/SQLite)
 
 ---
 
+## Subagent Map
+
+Subagents in `.claude/agents/` autonomously read, write, and edit files for their domain.
+
+| If the user says… | Use agent |
+|---|---|
+| "Set up the project", "initialize the database", "start a new PHP REST API", "Database class", ".htaccess", "CORS", "composer.json" | **setup-expert** |
+| "Explain the contract chain", "what interfaces exist", "how do layers connect", "EntityInterface", "RepositoryInterface", "ServiceInterface", "DIP", "Template Method" | **contracts-expert** |
+| "Add a new resource", "create a [X] module", "add [X] endpoint", "new CRUD", "add Comment", "add Category" | **module-builder** |
+| "How does routing work", "add a named route", "custom endpoint", "/users/login resolution", "unknown resource error", "how is the controller resolved" | **router-expert** |
+| "Write tests for", "add test coverage", "create a test file", "how do I test this endpoint", "api() helper", "beforeAll", "Pest PHP setup" | **test-writer** |
+
+---
+
 ## Skill Map
+
+Skills in `.claude/skills/` provide reference documentation and step-by-step runbooks.
 
 | If the user says… | Use skill |
 |---|---|
