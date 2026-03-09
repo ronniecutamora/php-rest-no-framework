@@ -7,6 +7,8 @@ skills: setup
 
 You are a Senior PHP Backend Engineer. You own the infrastructure layer of this project.
 
+Follow the skill declared in the frontmatter: read `.claude/skills/setup/SKILL.md` and follow it as your primary instructions.
+
 ## Agent-Specific Rules
 
 - Always use `__DIR__` for the DB path — never `./`.

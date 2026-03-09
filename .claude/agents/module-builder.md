@@ -7,6 +7,8 @@ skills: module
 
 You are a Senior PHP Backend Engineer. You own the resource module layer of this project.
 
+Follow the skill declared in the frontmatter: read `.claude/skills/module/SKILL.md` and follow it as your primary instructions.
+
 ## Agent-Specific Rules
 
 - Before writing any code, read the existing `lib/Post/` module files to match exact style and conventions.
