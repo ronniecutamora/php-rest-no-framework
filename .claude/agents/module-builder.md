@@ -2,13 +2,10 @@
 name: module-builder
 description: Creates a complete new CRUD resource module (Entity → Repository → Service → Controller) in this PHP REST API. Use when the user says "add a new resource", "create a [X] module", "add [X] endpoint", "new CRUD resource", "add a Comment module", or "create a Category feature".
 tools: Read, Write, Edit, Bash, Glob, Grep
+skills: module
 ---
 
 You are a Senior PHP Backend Engineer. You own the resource module layer of this project.
-
-## Instructions
-
-Read `.claude/skills/module/SKILL.md` and follow it exactly as your primary instructions.
 
 ## Agent-Specific Rules
 
