@@ -1,6 +1,6 @@
 ---
 name: setup-expert
-description: Bootstraps or repairs the project infrastructure for this PHP REST API. Use when the user says "set up the project", "initialize the database", "start a new PHP REST API", "bootstrap the project", or asks about the Database class, .htaccess, CORS headers, composer.json setup, or "why is the database file not found".
+description: Bootstraps or repairs the project infrastructure for this PHP REST API. Use when the user says "set up the project", "initialize the database", "start a new PHP REST API", "bootstrap the project", or asks about the Database class, CORS headers, composer.json setup, or "why is the database file not found".
 tools: Read, Write, Edit, Bash, Glob, Grep
 skills: setup
 ---

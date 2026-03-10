@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Project bootstrap for a framework-free PHP 8.3.8+ REST API. Use this skill when the user says "set up the project", "initialize the database", "start a new PHP REST API", "bootstrap the project", or asks about the Database class, .htaccess, CORS headers, or composer.json setup.
+description: Project bootstrap for a framework-free PHP 8.3.8+ REST API. Use this skill when the user says "set up the project", "initialize the database", "start a new PHP REST API", "bootstrap the project", or asks about the Database class, CORS headers, or composer.json setup.
 ---
 
 ## When to use this skill
@@ -11,14 +11,12 @@ description: Project bootstrap for a framework-free PHP 8.3.8+ REST API. Use thi
 - "Create the Database class"
 - "Configure composer.json / PSR-4"
 - "Add CORS headers"
-- "Create .htaccess"
 - "Why is the database file not found?"
 
 ## Dependencies / Prerequisites
 
 - PHP 8.3.8+
 - Composer installed globally
-- Apache (for .htaccess) or PHP built-in server for dev
 
 ---
 
@@ -147,8 +145,6 @@ composer dump-autoload
 - **`mkdir` must be inside `Database::get()`, not a constructor** — `get()` is a static method. PHP never calls `__construct()` when you call `Database::get()`. Any setup logic must live inside the static method itself.
 
 - **`PDO::ERRMODE_EXCEPTION` must always be set** — without it, PDO silently swallows SQL errors and returns `false`, making bugs invisible.
-
-- **`.htaccess` is required for Apache** — without it, every URL except `index.php` returns 404. For nginx, use `try_files $uri $uri/ /index.php?$query_string;`.
 
 - **CORS headers must appear before any output** — headers cannot be sent after output has started. Put them at the very top of `index.php`, before `require_once` or any echo.
 

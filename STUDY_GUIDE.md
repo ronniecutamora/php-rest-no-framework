@@ -319,7 +319,7 @@ class UserRepository extends Repository {
 
 ```
 project-root/
-├── index.php              # Front controller + built-in server router
+├── index.php              # Front controller + built-in server router (no .htaccess needed)
 ├── composer.json
 ├── lib/
 │   ├── Utils/

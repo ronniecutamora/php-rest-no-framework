@@ -14,7 +14,7 @@ Subagents in `.claude/agents/` autonomously read, write, and edit files for thei
 
 | If the user says… | Use agent |
 |---|---|
-| "Set up the project", "initialize the database", "start a new PHP REST API", "Database class", ".htaccess", "CORS", "composer.json" | **setup-expert** |
+| "Set up the project", "initialize the database", "start a new PHP REST API", "Database class", "CORS", "composer.json" | **setup-expert** |
 | "Explain the contract chain", "what interfaces exist", "how do layers connect", "EntityInterface", "RepositoryInterface", "ServiceInterface", "DIP", "Template Method" | **contracts-expert** |
 | "Add a new resource", "create a [X] module", "add [X] endpoint", "new CRUD", "add Comment", "add Category" | **module-builder** |
 | "How does routing work", "add a named route", "custom endpoint", "/users/login resolution", "unknown resource error", "how is the controller resolved" | **router-expert** |
@@ -28,7 +28,7 @@ Skills in `.claude/skills/` provide reference documentation and step-by-step run
 
 | If the user says… | Use skill |
 |---|---|
-| "Set up the project", "initialize the database", "start a new PHP REST API", "Database class", ".htaccess", "CORS", "composer.json" | **setup** |
+| "Set up the project", "initialize the database", "start a new PHP REST API", "Database class", "CORS", "composer.json" | **setup** |
 | "Explain the contract chain", "what interfaces exist", "how do layers connect", "EntityInterface", "RepositoryInterface", "ServiceInterface", "DIP", "Template Method" | **contracts** |
 | "Add a new resource", "create a [X] module", "add [X] endpoint", "new CRUD", "add Comment", "add Category" | **module** |
 | "How does routing work", "add a named route", "custom endpoint", "/users/login resolution", "unknown resource error", "how is the controller resolved" | **routing** |
@@ -40,8 +40,7 @@ Skills in `.claude/skills/` provide reference documentation and step-by-step run
 
 ```
 project-root/
-├── index.php              # Front controller — all requests enter here
-├── .htaccess              # Apache rewrite: all URLs → index.php
+├── index.php              # Front controller — all requests enter here (built-in server router)
 ├── composer.json          # PSR-4: "Lib\\": "lib/"
 ├── lib/
 │   ├── Utils/
